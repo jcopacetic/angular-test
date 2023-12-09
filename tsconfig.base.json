@@ -26,6 +26,9 @@
       ],
       "@angular-test/data-access": [
         "libs/data-access/src/index.ts"
+      ],
+      "@angular-test/data-services": [
+        "libs/data-services/src/index.ts"
       ]
     }
   },
