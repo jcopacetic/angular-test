@@ -2,7 +2,6 @@
   "name": "angular-test",
   "version": "1.0.0",
   "license": "MIT",
-  
   "scripts": {
     "ng": "nx",
     "postinstall": "node ./decorate-angular-cli.js && ngcc --properties es2020 browser module main",
@@ -10,7 +9,12 @@
     "build": "nx build",
     "test": "node 'node_modules/.bin/jest'",
     "jest": "npm run jest",
-    "e2e": "nx e2e angular-test-e2e"
+    "e2e": "nx e2e angular-test-e2e",
+    "deploy": "npm run deploy:dev",
+    "deploy:env": ". ./deploy.sh",
+    "deploy:dev": "Environment=dev npm run deploy:env",
+    "deploy:test": "Environment=test npm run deploy:env",
+    "deploy:prod": "Environment=prod npm run deploy:env"
   },
   "private": true,
   "dependencies": {
