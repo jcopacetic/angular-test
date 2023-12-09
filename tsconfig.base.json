@@ -23,6 +23,9 @@
       ],
       "@angular-test/common/ui": [
         "libs/common/ui/src/index.ts"
+      ],
+      "@angular-test/home": [
+        "libs/home/src/index.ts"
       ]
     }
   },
