@@ -29,6 +29,9 @@
       ],
       "@angular-test/data-services": [
         "libs/data-services/src/index.ts"
+      ],
+      "@angular-test/data-graphql": [
+        "libs/data-graphql/src/index.ts"
       ]
     }
   },
