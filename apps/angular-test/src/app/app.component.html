@@ -19,6 +19,19 @@
       </mat-nav-list>
       <router-outlet></router-outlet>
     </angular-test-global-sidenav>
+    <angular-test-global-sidenav [opened]="sideNavOpen">
+      <mat-nav-list sidenav>
+        <a
+          mat-list-item
+          routerLinkActive="active-link"
+          routerLink="/"
+          (click)="sideNavToggle()"
+        >
+          <span class="App__sidenav-text">Home</span>
+        </a>
+      </mat-nav-list>
+      <router-outlet></router-outlet>
+    </angular-test-global-sidenav>
   </div>
 </div>
 <angular-test-global-footer> </angular-test-global-footer>
